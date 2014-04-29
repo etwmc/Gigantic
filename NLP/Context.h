@@ -20,13 +20,13 @@ public:
         inputSide = input;
     }
     static Context *shareContext_InputSide() {
-        static Context *context = nullptr;
-        if (context == nullptr) context = new Context(true);
+        static Context *context = NULL;
+        if (context == NULL) context = new Context(true);
         return context;
     }
     static Context *shareContext_OutputSide() {
-        static Context *context = nullptr;
-        if (context == nullptr) context = new Context(false);
+        static Context *context = NULL;
+        if (context == NULL) context = new Context(false);
         return context;
     }
     vector<Object *>query(string word);

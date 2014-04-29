@@ -35,7 +35,7 @@ string Self::possessiveDeterminer() const {
     return "your";
 }
 Self *Self::singleton() {
-    Self *singleton = nullptr;
+    Self *singleton = NULL;
     if (!singleton) singleton = new Self();
     return singleton;
 }

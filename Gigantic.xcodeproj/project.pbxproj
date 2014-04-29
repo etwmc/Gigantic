@@ -7,73 +7,91 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		337F58C8190FB4F0009C1345 /* Context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
-		337F58C9190FB4F0009C1345 /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
-		337F58CA190FB4F0009C1345 /* helperFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = helperFunction.cpp; sourceTree = "<group>"; };
-		337F58CB190FB4F0009C1345 /* helperFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helperFunction.h; sourceTree = "<group>"; };
-		337F58CC190FB4F0009C1345 /* Info.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Info.cpp; sourceTree = "<group>"; };
-		337F58CD190FB4F0009C1345 /* Info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
-		337F58CE190FB4F0009C1345 /* librarySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = librarySet.h; sourceTree = "<group>"; };
-		337F58CF190FB4F0009C1345 /* Location.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Location.cpp; sourceTree = "<group>"; };
-		337F58D0190FB4F0009C1345 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		337F58D1190FB4F0009C1345 /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
-		337F58D2190FB4F0009C1345 /* Media.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Media.cpp; sourceTree = "<group>"; };
-		337F58D3190FB4F0009C1345 /* Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
-		337F58D4190FB4F0009C1345 /* NLP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLP.h; sourceTree = "<group>"; };
-		337F58D5190FB4F0009C1345 /* NLP.lex */ = {isa = PBXFileReference; lastKnownFileType = text; path = NLP.lex; sourceTree = "<group>"; };
-		337F58D6190FB4F0009C1345 /* NLP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NLP.xcodeproj; sourceTree = "<group>"; };
-		337F58D9190FB4F0009C1345 /* NLP.y */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.yacc; path = NLP.y; sourceTree = "<group>"; };
-		337F58DA190FB4F0009C1345 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		337F58DB190FB4F0009C1345 /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
-		337F58DC190FB4F0009C1345 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
-		337F58DD190FB4F0009C1345 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		337F58DE190FB4F0009C1345 /* Self.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Self.cpp; sourceTree = "<group>"; };
-		337F58DF190FB4F0009C1345 /* Self.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Self.h; sourceTree = "<group>"; };
-		337F58E0190FB4F0009C1345 /* SystemCalls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SystemCalls.c; sourceTree = "<group>"; };
-		337F58E1190FB4F0009C1345 /* SystemCalls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemCalls.h; sourceTree = "<group>"; };
-		337F58E2190FB4F0009C1345 /* VoiceCommander.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceCommander.cpp; sourceTree = "<group>"; };
-		337F58E3190FB4F0009C1345 /* VoiceCommander.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceCommander.h; sourceTree = "<group>"; };
+		1EEBE9A2190FB64C008004A8 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Context.cpp; path = NLP/Context.cpp; sourceTree = "<group>"; };
+		1EEBE9A3190FB64C008004A8 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Context.h; path = NLP/Context.h; sourceTree = "<group>"; };
+		1EEBE9A4190FB64C008004A8 /* helperFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helperFunction.cpp; path = NLP/helperFunction.cpp; sourceTree = "<group>"; };
+		1EEBE9A5190FB64C008004A8 /* helperFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helperFunction.h; path = NLP/helperFunction.h; sourceTree = "<group>"; };
+		1EEBE9A6190FB64C008004A8 /* Info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Info.cpp; path = NLP/Info.cpp; sourceTree = "<group>"; };
+		1EEBE9A7190FB64C008004A8 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Info.h; path = NLP/Info.h; sourceTree = "<group>"; };
+		1EEBE9A8190FB64C008004A8 /* librarySet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = librarySet.h; path = NLP/librarySet.h; sourceTree = "<group>"; };
+		1EEBE9A9190FB64C008004A8 /* Location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Location.cpp; path = NLP/Location.cpp; sourceTree = "<group>"; };
+		1EEBE9AA190FB64C008004A8 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = NLP/Location.h; sourceTree = "<group>"; };
+		1EEBE9AB190FB64C008004A8 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = makefile; path = NLP/makefile; sourceTree = "<group>"; };
+		1EEBE9AC190FB64C008004A8 /* Media.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Media.cpp; path = NLP/Media.cpp; sourceTree = "<group>"; };
+		1EEBE9AD190FB64C008004A8 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Media.h; path = NLP/Media.h; sourceTree = "<group>"; };
+		1EEBE9AE190FB64C008004A8 /* NLP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLP.h; path = NLP/NLP.h; sourceTree = "<group>"; };
+		1EEBE9AF190FB64C008004A8 /* NLP.lex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NLP.lex; path = NLP/NLP.lex; sourceTree = "<group>"; };
+		1EEBE9B0190FB64C008004A8 /* NLP.y */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; name = NLP.y; path = NLP/NLP.y; sourceTree = "<group>"; };
+		1EEBE9B1190FB64C008004A8 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = NLP/Object.cpp; sourceTree = "<group>"; };
+		1EEBE9B2190FB64C008004A8 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object.h; path = NLP/Object.h; sourceTree = "<group>"; };
+		1EEBE9B3190FB64C008004A8 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = NLP/Person.cpp; sourceTree = "<group>"; };
+		1EEBE9B4190FB64C008004A8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = NLP/Person.h; sourceTree = "<group>"; };
+		1EEBE9B5190FB64C008004A8 /* Self.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Self.cpp; path = NLP/Self.cpp; sourceTree = "<group>"; };
+		1EEBE9B6190FB64C008004A8 /* Self.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Self.h; path = NLP/Self.h; sourceTree = "<group>"; };
+		1EEBE9B7190FB64C008004A8 /* SystemCalls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SystemCalls.c; path = NLP/SystemCalls.c; sourceTree = "<group>"; };
+		1EEBE9B8190FB64C008004A8 /* SystemCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemCalls.h; path = NLP/SystemCalls.h; sourceTree = "<group>"; };
+		1EEBE9B9190FB64C008004A8 /* VoiceCommander.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VoiceCommander.cpp; path = NLP/VoiceCommander.cpp; sourceTree = "<group>"; };
+		1EEBE9BA190FB64C008004A8 /* VoiceCommander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceCommander.h; path = NLP/VoiceCommander.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		1EEBE9A1190FB620008004A8 /* NLP */ = {
+			isa = PBXGroup;
+			children = (
+				1EEBE9A2190FB64C008004A8 /* Context.cpp */,
+				1EEBE9A3190FB64C008004A8 /* Context.h */,
+				1EEBE9A4190FB64C008004A8 /* helperFunction.cpp */,
+				1EEBE9A5190FB64C008004A8 /* helperFunction.h */,
+				1EEBE9A6190FB64C008004A8 /* Info.cpp */,
+				1EEBE9A7190FB64C008004A8 /* Info.h */,
+				1EEBE9A8190FB64C008004A8 /* librarySet.h */,
+				1EEBE9A9190FB64C008004A8 /* Location.cpp */,
+				1EEBE9AA190FB64C008004A8 /* Location.h */,
+				1EEBE9AB190FB64C008004A8 /* makefile */,
+				1EEBE9AC190FB64C008004A8 /* Media.cpp */,
+				1EEBE9AD190FB64C008004A8 /* Media.h */,
+				1EEBE9AE190FB64C008004A8 /* NLP.h */,
+				1EEBE9AF190FB64C008004A8 /* NLP.lex */,
+				1EEBE9B0190FB64C008004A8 /* NLP.y */,
+				1EEBE9B1190FB64C008004A8 /* Object.cpp */,
+				1EEBE9B2190FB64C008004A8 /* Object.h */,
+				1EEBE9B3190FB64C008004A8 /* Person.cpp */,
+				1EEBE9B4190FB64C008004A8 /* Person.h */,
+				1EEBE9B5190FB64C008004A8 /* Self.cpp */,
+				1EEBE9B6190FB64C008004A8 /* Self.h */,
+				1EEBE9B7190FB64C008004A8 /* SystemCalls.c */,
+				1EEBE9B8190FB64C008004A8 /* SystemCalls.h */,
+				1EEBE9B9190FB64C008004A8 /* VoiceCommander.cpp */,
+				1EEBE9BA190FB64C008004A8 /* VoiceCommander.h */,
+			);
+			name = NLP;
+			sourceTree = "<group>";
+		};
 		337F5852190FA795009C1345 = {
 			isa = PBXGroup;
 			children = (
-				337F58C8190FB4F0009C1345 /* Context.cpp */,
-				337F58C9190FB4F0009C1345 /* Context.h */,
-				337F58CA190FB4F0009C1345 /* helperFunction.cpp */,
-				337F58CB190FB4F0009C1345 /* helperFunction.h */,
-				337F58CC190FB4F0009C1345 /* Info.cpp */,
-				337F58CD190FB4F0009C1345 /* Info.h */,
-				337F58CE190FB4F0009C1345 /* librarySet.h */,
-				337F58CF190FB4F0009C1345 /* Location.cpp */,
-				337F58D0190FB4F0009C1345 /* Location.h */,
-				337F58D1190FB4F0009C1345 /* makefile */,
-				337F58D2190FB4F0009C1345 /* Media.cpp */,
-				337F58D3190FB4F0009C1345 /* Media.h */,
-				337F58D4190FB4F0009C1345 /* NLP.h */,
-				337F58D5190FB4F0009C1345 /* NLP.lex */,
-				337F58D6190FB4F0009C1345 /* NLP.xcodeproj */,
-				337F58D9190FB4F0009C1345 /* NLP.y */,
-				337F58DA190FB4F0009C1345 /* Object.cpp */,
-				337F58DB190FB4F0009C1345 /* Object.h */,
-				337F58DC190FB4F0009C1345 /* Person.cpp */,
-				337F58DD190FB4F0009C1345 /* Person.h */,
-				337F58DE190FB4F0009C1345 /* Self.cpp */,
-				337F58DF190FB4F0009C1345 /* Self.h */,
-				337F58E0190FB4F0009C1345 /* SystemCalls.c */,
-				337F58E1190FB4F0009C1345 /* SystemCalls.h */,
-				337F58E2190FB4F0009C1345 /* VoiceCommander.cpp */,
-				337F58E3190FB4F0009C1345 /* VoiceCommander.h */,
+				1EEBE9A1190FB620008004A8 /* NLP */,
 			);
 			sourceTree = "<group>";
 		};
-		337F58D7190FB4F0009C1345 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		1EEBE99D190FB60F008004A8 /* NLP_Engine */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 1EEBE9A0190FB610008004A8 /* Build configuration list for PBXLegacyTarget "NLP_Engine" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = NLP;
+			dependencies = (
+			);
+			name = NLP_Engine;
+			passBuildSettingsInEnvironment = 1;
+			productName = NLP_Engine;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
 		337F5853190FA795009C1345 /* Project object */ = {
@@ -90,19 +108,79 @@
 			);
 			mainGroup = 337F5852190FA795009C1345;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 337F58D7190FB4F0009C1345 /* Products */;
-					ProjectRef = 337F58D6190FB4F0009C1345 /* NLP.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
+				1EEBE99D190FB60F008004A8 /* NLP_Engine */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
+		1EEBE99E190FB610008004A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1EEBE99F190FB610008004A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		337F5857190FA795009C1345 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -118,6 +196,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1EEBE9A0190FB610008004A8 /* Build configuration list for PBXLegacyTarget "NLP_Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEBE99E190FB610008004A8 /* Debug */,
+				1EEBE99F190FB610008004A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		337F5856190FA795009C1345 /* Build configuration list for PBXProject "Gigantic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

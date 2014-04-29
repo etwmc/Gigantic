@@ -48,7 +48,7 @@ public:
     Person(string data);
     //User based information
     virtual string query(string syntax, vector<string>describes);
-    Object *personRelated(string) { return nullptr; }
+    Object *personRelated(string) { return NULL; }
 };
 
 ostream &operator << (ostream &ost, const Person & per);

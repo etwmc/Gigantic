@@ -15,7 +15,7 @@ string VoiceCommander::possessiveDeterminer() const {
     return "my";
 }
 VoiceCommander *VoiceCommander::singleton() {
-    VoiceCommander *singleton = nullptr;
+    VoiceCommander *singleton = NULL;
     if (!singleton) singleton = new VoiceCommander();
     return singleton;
 }
