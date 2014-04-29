@@ -55,7 +55,7 @@ QUESTION: QT VERB NounPhase	{
                     break;
                 case 1: {
                     string personNameString = buildObjectOwnership(people[0], "name");
-                    answer = buildSentence(personNameString, "be", simplePresent, false, people[0]->name());
+                    answer = buildSentence(personNameString, "be", simplePresent, false, people[0]->query("name"));
                 }
                     break;
                 default:

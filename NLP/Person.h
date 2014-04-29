@@ -46,8 +46,8 @@ public:
     //General Infomation
     Person() {}
     Person(string data);
-    //User based information
-    virtual string query(string syntax, vector<string>describes);
+    //Object based information
+    virtual string query(string syntax, vector<string>describes = vector<string>());
     Object *personRelated(string) { return NULL; }
 };
 

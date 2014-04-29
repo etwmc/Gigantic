@@ -27,14 +27,11 @@ public:
     virtual string name() const { return ""; }
     virtual string pronoun() const { return "it"; }
     virtual string possessiveDeterminer() const { return "its"; }
-    virtual string query(string syntax, vector<string>describes) {
+    virtual string query(string syntax, vector<string>describes = vector<string>()) {
 #warning - Unimplemented method
         return "";
     }
-    string query(string syntax) {
-        static vector<string>empty;
-        return query(syntax, empty);
-    }
+    
     virtual void setValueForKey(string key, void *value) {}
 };
 ObjDB operator << (ObjDB &db, Object &obj);
