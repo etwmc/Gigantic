@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAA4CE2190FC32500D5C06C /* Art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA4CE0190FC32500D5C06C /* Art.cpp */; };
 		1EEBE9C5190FC0B2008004A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9C4190FC0B2008004A8 /* main.cpp */; };
 		1EEBE9C7190FC0B2008004A8 /* CodeSense.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1EEBE9C6190FC0B2008004A8 /* CodeSense.1 */; };
 		1EEBE9CB190FC0C2008004A8 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9A2190FB64C008004A8 /* Context.cpp */; };
@@ -19,7 +20,6 @@
 		1EEBE9D2190FC0C2008004A8 /* Self.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9B5190FB64C008004A8 /* Self.cpp */; };
 		1EEBE9D3190FC0C2008004A8 /* SystemCalls.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9B7190FB64C008004A8 /* SystemCalls.c */; };
 		1EEBE9D4190FC0C2008004A8 /* VoiceCommander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9B9190FB64C008004A8 /* VoiceCommander.cpp */; };
-		1EEBE9D5190FC0C2008004A8 /* Art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBE9BB190FBFD9008004A8 /* Art.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EAA4CE0190FC32500D5C06C /* Art.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Art.cpp; path = NLP/Art.cpp; sourceTree = "<group>"; };
+		1EAA4CE1190FC32500D5C06C /* Art.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Art.h; path = NLP/Art.h; sourceTree = "<group>"; };
 		1EEBE9A2190FB64C008004A8 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Context.cpp; path = NLP/Context.cpp; sourceTree = "<group>"; };
 		1EEBE9A3190FB64C008004A8 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Context.h; path = NLP/Context.h; sourceTree = "<group>"; };
 		1EEBE9A4190FB64C008004A8 /* helperFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helperFunction.cpp; path = NLP/helperFunction.cpp; sourceTree = "<group>"; };
@@ -61,8 +63,6 @@
 		1EEBE9B8190FB64C008004A8 /* SystemCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemCalls.h; path = NLP/SystemCalls.h; sourceTree = "<group>"; };
 		1EEBE9B9190FB64C008004A8 /* VoiceCommander.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VoiceCommander.cpp; path = NLP/VoiceCommander.cpp; sourceTree = "<group>"; };
 		1EEBE9BA190FB64C008004A8 /* VoiceCommander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceCommander.h; path = NLP/VoiceCommander.h; sourceTree = "<group>"; };
-		1EEBE9BB190FBFD9008004A8 /* Art.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Art.cpp; sourceTree = "<group>"; };
-		1EEBE9BC190FBFD9008004A8 /* Art.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Art.h; sourceTree = "<group>"; };
 		1EEBE9C1190FC0B2008004A8 /* CodeSense */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodeSense; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEBE9C4190FC0B2008004A8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1EEBE9C6190FC0B2008004A8 /* CodeSense.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CodeSense.1; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		1EEBE9A1190FB620008004A8 /* NLP */ = {
 			isa = PBXGroup;
 			children = (
+				1EAA4CE0190FC32500D5C06C /* Art.cpp */,
+				1EAA4CE1190FC32500D5C06C /* Art.h */,
 				1EEBE9A2190FB64C008004A8 /* Context.cpp */,
 				1EEBE9A3190FB64C008004A8 /* Context.h */,
 				1EEBE9A4190FB64C008004A8 /* helperFunction.cpp */,
@@ -107,8 +109,6 @@
 				1EEBE9B8190FB64C008004A8 /* SystemCalls.h */,
 				1EEBE9B9190FB64C008004A8 /* VoiceCommander.cpp */,
 				1EEBE9BA190FB64C008004A8 /* VoiceCommander.h */,
-				1EEBE9BB190FBFD9008004A8 /* Art.cpp */,
-				1EEBE9BC190FBFD9008004A8 /* Art.h */,
 			);
 			name = NLP;
 			sourceTree = "<group>";
@@ -217,8 +217,8 @@
 				1EEBE9D2190FC0C2008004A8 /* Self.cpp in Sources */,
 				1EEBE9D3190FC0C2008004A8 /* SystemCalls.c in Sources */,
 				1EEBE9D4190FC0C2008004A8 /* VoiceCommander.cpp in Sources */,
-				1EEBE9D5190FC0C2008004A8 /* Art.cpp in Sources */,
 				1EEBE9C5190FC0B2008004A8 /* main.cpp in Sources */,
+				1EAA4CE2190FC32500D5C06C /* Art.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +373,7 @@
 				1EEBE99F190FB610008004A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EEBE9C8190FC0B2008004A8 /* Build configuration list for PBXNativeTarget "CodeSense" */ = {
 			isa = XCConfigurationList;
@@ -381,6 +382,7 @@
 				1EEBE9CA190FC0B2008004A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		337F5856190FA795009C1345 /* Build configuration list for PBXProject "Gigantic" */ = {
 			isa = XCConfigurationList;
