@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>routingReference_verb</key>
+	<array/>
+	<key>routingReference_noun</key>
+	<array>
+		<string>age</string>
+		<string>creationDate</string>
+	</array>
+	<key>routingReference_adjective</key>
+	<array>
+		<string>old</string>
+		<string>older</string>
+		<string>oldest</string>
+		<string>new</string>
+		<string>newer</string>
+		<string>newest</string>
+	</array>
+	<key>Verb</key>
+	<array>
+		<dict>
+			<key>Command</key>
+			<string>print</string>
+			<key>Return Value</key>
+			<false/>
+			<key>Accept Modifier</key>
+			<false/>
+		</dict>
+	</array>
+	<key>classID</key>
+	<integer>123</integer>
+	<key>Noun</key>
+	<array>
+		<dict>
+			<key>Expression</key>
+			<string>creationTime.durationToNow.year</string>
+		</dict>
+		<dict>
+			<key>Expression</key>
+			<string>creationTime</string>
+		</dict>
+	</array>
+	<key>Adjective</key>
+	<array>
+		<dict>
+			<key>asscending</key>
+			<false/>
+			<key>value</key>
+			<string>age</string>
+			<key>judgement</key>
+			<string>ALL age.doubleValue &gt;= 60.0</string>
+			<key>defaultNumber</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>asscending</key>
+			<false/>
+			<key>value</key>
+			<string>creationDate</string>
+			<key>defaultNumber</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

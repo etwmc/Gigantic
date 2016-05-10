@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8BD7108D-3A3F-4645-8025-2600E7FE126C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GiganticCentral</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>53A0D80F0CFAF6BEA43DA7E5C6F1E0F3F018C195</key>
+		<string>http://happywaiman.dlinkddns.com/git/Gigantic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GiganticCentral/GiganticCentral.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>53A0D80F0CFAF6BEA43DA7E5C6F1E0F3F018C195</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://happywaiman.dlinkddns.com/git/Gigantic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>53A0D80F0CFAF6BEA43DA7E5C6F1E0F3F018C195</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53A0D80F0CFAF6BEA43DA7E5C6F1E0F3F018C195</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Gigantic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

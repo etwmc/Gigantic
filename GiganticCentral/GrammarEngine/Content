@@ -1,0 +1,13 @@
+This folder contains the source code of GrammarEngine, a grammar engine verify whether every possible outcome is logically correct (i.e. the sentence could be transform to a transaction which the order is correct. )
+Then, the engine transfer the input statement into a formatted query message, with the following content in a pre-defined format:
+1. Sentence type (e.g. question, statement, command, extending)
+2. Expect reply (e.g. Location, Time, Boolean/Success?, None)
+3. Target object/characteristic in a chain format: 
+e.g. what is (my ((car mileage) in (the last hour)))  —->>  my->car->mileage
+4. Further query condition
+e.g. what is (my ((car mileage) in (the last hour)))  —->>  Condition: Last hour -> Condition: 8:00am-9:00am
+5. A copy of the original message
+
+There will be a process called GrammarEngine keep alive (GE daemon) in the system, which await any input request. 
+When a request is received, the GE daemon will use fork() to copy a child process (GE child). 
+The (GE child) will process

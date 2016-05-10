@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GCExtend.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>LyricFinder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MusicPlayer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Phone.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>RestaurantFinder.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>332A6FD11AD9616900668000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33476BFA1A98C4C400F201AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3377A8EE1A6E52D100C7C44E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33784C781AE4EE0000B06976</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33D0E3211949DAE100B71462</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33D0E3311949E33F00B71462</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

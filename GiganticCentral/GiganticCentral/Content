@@ -1,0 +1,8 @@
+This folder/project contain the source code of Gigantic Central
+Gigantic Central is the centre of the Project Gigantic. It contain the input processing, output generation, and an interface for on-flight extension. 
+Input Processing: 
+Output Generation: 
+On-flight extension: 
+For on-flight extension, Gigantic allows any plugin connect to the central with Unix socket, where the central will use the extension to judge the type of a partition of input. 
+Due to the variety of input, and the nature of the programming prefer extension then implement, every noun and adjective will be handle by the object maker of the extension, where the adverb and verb will be handled by the object itself. 
+For every object maker, one extension connection is needed. 

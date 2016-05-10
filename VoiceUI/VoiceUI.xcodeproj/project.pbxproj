@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330B3BBB194F6AB600293EBE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 330B3BBA194F6AB600293EBE /* main.mm */; };
+		334560521A52A5080036C80D /* VIPipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 33B02F1A19508F4F00B32802 /* VIPipe.c */; };
+		334560531A52A50D0036C80D /* VIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B02F1D19508F6200B32802 /* VIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		334560541A52A5160036C80D /* ShareConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B02F241950A9E700B32802 /* ShareConstant.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		334560551A52A51B0036C80D /* VIPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B02F1C19508F5800B32802 /* VIPipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		339C515019B6B07F000BEE4D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339C514F19B6B07F000BEE4D /* Cocoa.framework */; };
+		339C515119B6F627000BEE4D /* VUI_SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 339C514C19B6B017000BEE4D /* VUI_SpeechSynthesizer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		330B3BB5194F6AB600293EBE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		330B3BB7194F6AB600293EBE /* VoiceUI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VoiceUI; sourceTree = BUILT_PRODUCTS_DIR; };
+		330B3BBA194F6AB600293EBE /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3345604E1A52A4FF0036C80D /* libVIKit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libVIKit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		339C514C19B6B017000BEE4D /* VUI_SpeechSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VUI_SpeechSynthesizer.m; sourceTree = "<group>"; };
+		339C514D19B6B017000BEE4D /* VUI_SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VUI_SpeechSynthesizer.h; sourceTree = "<group>"; };
+		339C514F19B6B07F000BEE4D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		33A4F9021A7BB51200E2628C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		33B02F1A19508F4F00B32802 /* VIPipe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VIPipe.c; sourceTree = "<group>"; };
+		33B02F1C19508F5800B32802 /* VIPipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPipe.h; sourceTree = "<group>"; };
+		33B02F1D19508F6200B32802 /* VIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIKit.h; sourceTree = "<group>"; };
+		33B02F241950A9E700B32802 /* ShareConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareConstant.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		330B3BB4194F6AB600293EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339C515019B6B07F000BEE4D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3345604B1A52A4FF0036C80D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330B3BAE194F6AB600293EBE = {
+			isa = PBXGroup;
+			children = (
+				33A4F9021A7BB51200E2628C /* AVFoundation.framework */,
+				339C514F19B6B07F000BEE4D /* Cocoa.framework */,
+				33B02F241950A9E700B32802 /* ShareConstant.h */,
+				330B3BB9194F6AB600293EBE /* VoiceUI */,
+				33B02F1019508EE500B32802 /* VIKit */,
+				330B3BB8194F6AB600293EBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		330B3BB8194F6AB600293EBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				330B3BB7194F6AB600293EBE /* VoiceUI */,
+				3345604E1A52A4FF0036C80D /* libVIKit.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		330B3BB9194F6AB600293EBE /* VoiceUI */ = {
+			isa = PBXGroup;
+			children = (
+				330B3BBA194F6AB600293EBE /* main.mm */,
+				339C514C19B6B017000BEE4D /* VUI_SpeechSynthesizer.m */,
+				339C514D19B6B017000BEE4D /* VUI_SpeechSynthesizer.h */,
+			);
+			path = VoiceUI;
+			sourceTree = "<group>";
+		};
+		33B02F1019508EE500B32802 /* VIKit */ = {
+			isa = PBXGroup;
+			children = (
+				33B02F1D19508F6200B32802 /* VIKit.h */,
+				33B02F1C19508F5800B32802 /* VIPipe.h */,
+				33B02F1A19508F4F00B32802 /* VIPipe.c */,
+			);
+			path = VIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3345604C1A52A4FF0036C80D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334560531A52A50D0036C80D /* VIKit.h in Headers */,
+				334560551A52A51B0036C80D /* VIPipe.h in Headers */,
+				334560541A52A5160036C80D /* ShareConstant.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		330B3BB6194F6AB600293EBE /* VoiceUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330B3BBE194F6AB600293EBE /* Build configuration list for PBXNativeTarget "VoiceUI" */;
+			buildPhases = (
+				330B3BB3194F6AB600293EBE /* Sources */,
+				330B3BB4194F6AB600293EBE /* Frameworks */,
+				330B3BB5194F6AB600293EBE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceUI;
+			productName = VoiceUI;
+			productReference = 330B3BB7194F6AB600293EBE /* VoiceUI */;
+			productType = "com.apple.product-type.tool";
+		};
+		3345604D1A52A4FF0036C80D /* VIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 334560511A52A4FF0036C80D /* Build configuration list for PBXNativeTarget "VIKit" */;
+			buildPhases = (
+				3345604A1A52A4FF0036C80D /* Sources */,
+				3345604B1A52A4FF0036C80D /* Frameworks */,
+				3345604C1A52A4FF0036C80D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIKit;
+			productName = VIKit;
+			productReference = 3345604E1A52A4FF0036C80D /* libVIKit.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		330B3BAF194F6AB600293EBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Wai Man Chan";
+				TargetAttributes = {
+					330B3BB6194F6AB600293EBE = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3345604D1A52A4FF0036C80D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 330B3BB2194F6AB600293EBE /* Build configuration list for PBXProject "VoiceUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 330B3BAE194F6AB600293EBE;
+			productRefGroup = 330B3BB8194F6AB600293EBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				330B3BB6194F6AB600293EBE /* VoiceUI */,
+				3345604D1A52A4FF0036C80D /* VIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		330B3BB3194F6AB600293EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339C515119B6F627000BEE4D /* VUI_SpeechSynthesizer.m in Sources */,
+				330B3BBB194F6AB600293EBE /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3345604A1A52A4FF0036C80D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334560521A52A5080036C80D /* VIPipe.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		330B3BBC194F6AB600293EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		330B3BBD194F6AB600293EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		330B3BBF194F6AB600293EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		330B3BC0194F6AB600293EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3345604F1A52A4FF0036C80D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		334560501A52A4FF0036C80D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330B3BB2194F6AB600293EBE /* Build configuration list for PBXProject "VoiceUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330B3BBC194F6AB600293EBE /* Debug */,
+				330B3BBD194F6AB600293EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330B3BBE194F6AB600293EBE /* Build configuration list for PBXNativeTarget "VoiceUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330B3BBF194F6AB600293EBE /* Debug */,
+				330B3BC0194F6AB600293EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		334560511A52A4FF0036C80D /* Build configuration list for PBXNativeTarget "VIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3345604F1A52A4FF0036C80D /* Debug */,
+				334560501A52A4FF0036C80D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 330B3BAF194F6AB600293EBE /* Project object */;
+}

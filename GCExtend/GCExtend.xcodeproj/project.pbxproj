@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33244B9C1ADF668600EDE43A /* LyricFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 33244B9B1ADF668600EDE43A /* LyricFinder.m */; };
+		33244B9D1ADF66B400EDE43A /* libGCExtend.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D0E3221949DAE100B71462 /* libGCExtend.dylib */; };
+		332A6FD51AD9616900668000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 332A6FD41AD9616900668000 /* main.m */; };
+		33476BFE1A98C4C500F201AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33476BFD1A98C4C500F201AC /* main.m */; };
+		33476C041A98C54A00F201AC /* RFRestaurantFinderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33476C031A98C54A00F201AC /* RFRestaurantFinderExtension.m */; };
+		334B7ECE1AB05EA7008B00E6 /* libGCExtend.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D0E3221949DAE100B71462 /* libGCExtend.dylib */; };
+		335034471ADFAA7F004AF5BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335034461ADFAA7F004AF5BC /* Cocoa.framework */; };
+		3377A8F21A6E52D100C7C44E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3377A8F11A6E52D100C7C44E /* main.m */; };
+		3392C6D61A776D880009B003 /* MPMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3392C6D51A776D880009B003 /* MPMusicPlayer.m */; };
+		3392C6DB1A777E970009B003 /* libGCExtend.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D0E3221949DAE100B71462 /* libGCExtend.dylib */; };
+		3392C6DE1A777EB50009B003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A99BE819C2C6630052627E /* Foundation.framework */; };
+		3392C7571A778FF60009B003 /* GCEObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3392C6D81A77749B0009B003 /* GCEObjectRequest.m */; };
+		3392C7581A778FF60009B003 /* GCEObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397110C19C0469600613D5D /* GCEObject.m */; };
+		3392C7591A778FF60009B003 /* GCELocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397111019C0479300613D5D /* GCELocation.m */; };
+		3392C75A1A778FF60009B003 /* GCEPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3397111419C04D1500613D5D /* GCEPerson.m */; };
+		3397110D19C0469600613D5D /* GCEObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3397110B19C0469600613D5D /* GCEObject.h */; };
+		3397111119C0479300613D5D /* GCELocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3397110F19C0479300613D5D /* GCELocation.h */; };
+		3397111519C04D1500613D5D /* GCEPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 3397111319C04D1500613D5D /* GCEPerson.h */; };
+		33A4F9051A7BC7B400E2628C /* libVIKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4F9041A7BC7B400E2628C /* libVIKit.dylib */; };
+		33A99BE919C2C6630052627E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A99BE819C2C6630052627E /* Foundation.framework */; };
+		33D0E32C1949DB4C00B71462 /* GCEExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D0E32A1949DB4C00B71462 /* GCEExtension.m */; };
+		33D0E32D1949DB4C00B71462 /* GCEExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D0E32B1949DB4C00B71462 /* GCEExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33EB129B1A8A52B2007AF03F /* GCETime.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EB12991A8A52B2007AF03F /* GCETime.h */; };
+		33EB129C1A8A52B2007AF03F /* GCETime.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EB129A1A8A52B2007AF03F /* GCETime.m */; };
+		33ED6288194F0D0000EEEFCE /* GCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 33ED6287194F0CD000EEEFCE /* GCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3392C6E01A777F770009B003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D0E31A1949DAE100B71462 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D0E3211949DAE100B71462;
+			remoteInfo = GCExtend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		332A6FD01AD9616900668000 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		33476BF91A98C4C400F201AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3377A8ED1A6E52D100C7C44E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		33244B9A1ADF668600EDE43A /* LyricFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricFinder.h; sourceTree = "<group>"; };
+		33244B9B1ADF668600EDE43A /* LyricFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricFinder.m; sourceTree = "<group>"; };
+		332A6FD21AD9616900668000 /* LyricFinder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LyricFinder; sourceTree = BUILT_PRODUCTS_DIR; };
+		332A6FD41AD9616900668000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33476BFB1A98C4C400F201AC /* RestaurantFinder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RestaurantFinder; sourceTree = BUILT_PRODUCTS_DIR; };
+		33476BFD1A98C4C500F201AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33476C021A98C54A00F201AC /* RFRestaurantFinderExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFRestaurantFinderExtension.h; sourceTree = "<group>"; };
+		33476C031A98C54A00F201AC /* RFRestaurantFinderExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFRestaurantFinderExtension.m; sourceTree = "<group>"; };
+		335034461ADFAA7F004AF5BC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3377A8EF1A6E52D100C7C44E /* MusicPlayer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MusicPlayer; sourceTree = BUILT_PRODUCTS_DIR; };
+		3377A8F11A6E52D100C7C44E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3392C6D41A776D880009B003 /* MPMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMusicPlayer.h; sourceTree = "<group>"; };
+		3392C6D51A776D880009B003 /* MPMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMusicPlayer.m; sourceTree = "<group>"; };
+		3392C6D71A77749B0009B003 /* GCEObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEObjectRequest.h; sourceTree = "<group>"; };
+		3392C6D81A77749B0009B003 /* GCEObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEObjectRequest.m; sourceTree = "<group>"; };
+		3392C6DA1A7774DC0009B003 /* GCEObjectConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEObjectConstant.h; sourceTree = "<group>"; };
+		3397110B19C0469600613D5D /* GCEObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEObject.h; sourceTree = "<group>"; };
+		3397110C19C0469600613D5D /* GCEObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEObject.m; sourceTree = "<group>"; };
+		3397110F19C0479300613D5D /* GCELocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCELocation.h; sourceTree = "<group>"; };
+		3397111019C0479300613D5D /* GCELocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCELocation.m; sourceTree = "<group>"; };
+		3397111319C04D1500613D5D /* GCEPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEPerson.h; sourceTree = "<group>"; };
+		3397111419C04D1500613D5D /* GCEPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEPerson.m; sourceTree = "<group>"; };
+		33A4F9041A7BC7B400E2628C /* libVIKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libVIKit.dylib; path = "../../../Library/Developer/Xcode/DerivedData/Gigantic-dcmmhqxbwmlitffeatzwjxxnmnta/Build/Products/Debug/libVIKit.dylib"; sourceTree = "<group>"; };
+		33A99BE819C2C6630052627E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		33D0E3221949DAE100B71462 /* libGCExtend.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libGCExtend.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D0E3291949DAF000B71462 /* Content */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Content; sourceTree = "<group>"; };
+		33D0E32A1949DB4C00B71462 /* GCEExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCEExtension.m; sourceTree = "<group>"; };
+		33D0E32B1949DB4C00B71462 /* GCEExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCEExtension.h; sourceTree = "<group>"; };
+		33EB12991A8A52B2007AF03F /* GCETime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCETime.h; sourceTree = "<group>"; };
+		33EB129A1A8A52B2007AF03F /* GCETime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCETime.m; sourceTree = "<group>"; };
+		33ED6287194F0CD000EEEFCE /* GCExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCExtend.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		332A6FCF1AD9616900668000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335034471ADFAA7F004AF5BC /* Cocoa.framework in Frameworks */,
+				33244B9D1ADF66B400EDE43A /* libGCExtend.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33476BF81A98C4C400F201AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334B7ECE1AB05EA7008B00E6 /* libGCExtend.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3377A8EC1A6E52D100C7C44E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A4F9051A7BC7B400E2628C /* libVIKit.dylib in Frameworks */,
+				3392C6DE1A777EB50009B003 /* Foundation.framework in Frameworks */,
+				3392C6DB1A777E970009B003 /* libGCExtend.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D0E31F1949DAE100B71462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A99BE919C2C6630052627E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		332A6FD31AD9616900668000 /* LyricFinder */ = {
+			isa = PBXGroup;
+			children = (
+				332A6FD41AD9616900668000 /* main.m */,
+				33244B9A1ADF668600EDE43A /* LyricFinder.h */,
+				33244B9B1ADF668600EDE43A /* LyricFinder.m */,
+			);
+			path = LyricFinder;
+			sourceTree = "<group>";
+		};
+		33476BFC1A98C4C500F201AC /* RestaurantFinder */ = {
+			isa = PBXGroup;
+			children = (
+				33476BFD1A98C4C500F201AC /* main.m */,
+				33476C021A98C54A00F201AC /* RFRestaurantFinderExtension.h */,
+				33476C031A98C54A00F201AC /* RFRestaurantFinderExtension.m */,
+			);
+			path = RestaurantFinder;
+			sourceTree = "<group>";
+		};
+		3377A8F01A6E52D100C7C44E /* MusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3377A8F11A6E52D100C7C44E /* main.m */,
+				3392C6D41A776D880009B003 /* MPMusicPlayer.h */,
+				3392C6D51A776D880009B003 /* MPMusicPlayer.m */,
+			);
+			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		3397111719C04E1E00613D5D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3392C6DA1A7774DC0009B003 /* GCEObjectConstant.h */,
+				3392C6D71A77749B0009B003 /* GCEObjectRequest.h */,
+				3392C6D81A77749B0009B003 /* GCEObjectRequest.m */,
+				3397110B19C0469600613D5D /* GCEObject.h */,
+				3397110C19C0469600613D5D /* GCEObject.m */,
+				3397110F19C0479300613D5D /* GCELocation.h */,
+				3397111019C0479300613D5D /* GCELocation.m */,
+				3397111319C04D1500613D5D /* GCEPerson.h */,
+				3397111419C04D1500613D5D /* GCEPerson.m */,
+				33EB12991A8A52B2007AF03F /* GCETime.h */,
+				33EB129A1A8A52B2007AF03F /* GCETime.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		33D0E3191949DAE100B71462 = {
+			isa = PBXGroup;
+			children = (
+				335034461ADFAA7F004AF5BC /* Cocoa.framework */,
+				33A4F9041A7BC7B400E2628C /* libVIKit.dylib */,
+				33A99BE819C2C6630052627E /* Foundation.framework */,
+				33D0E3291949DAF000B71462 /* Content */,
+				33ED628F194F20A200EEEFCE /* GCExtend */,
+				3377A8F01A6E52D100C7C44E /* MusicPlayer */,
+				33476BFC1A98C4C500F201AC /* RestaurantFinder */,
+				332A6FD31AD9616900668000 /* LyricFinder */,
+				33D0E3231949DAE100B71462 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33D0E3231949DAE100B71462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D0E3221949DAE100B71462 /* libGCExtend.dylib */,
+				3377A8EF1A6E52D100C7C44E /* MusicPlayer */,
+				33476BFB1A98C4C400F201AC /* RestaurantFinder */,
+				332A6FD21AD9616900668000 /* LyricFinder */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33ED628F194F20A200EEEFCE /* GCExtend */ = {
+			isa = PBXGroup;
+			children = (
+				33ED6287194F0CD000EEEFCE /* GCExtend.h */,
+				3397111719C04E1E00613D5D /* Objects */,
+				33D0E32B1949DB4C00B71462 /* GCEExtension.h */,
+				33D0E32A1949DB4C00B71462 /* GCEExtension.m */,
+			);
+			name = GCExtend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33D0E3201949DAE100B71462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3397111519C04D1500613D5D /* GCEPerson.h in Headers */,
+				33ED6288194F0D0000EEEFCE /* GCExtend.h in Headers */,
+				33D0E32D1949DB4C00B71462 /* GCEExtension.h in Headers */,
+				33EB129B1A8A52B2007AF03F /* GCETime.h in Headers */,
+				3397110D19C0469600613D5D /* GCEObject.h in Headers */,
+				3397111119C0479300613D5D /* GCELocation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		332A6FD11AD9616900668000 /* LyricFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332A6FD81AD9616900668000 /* Build configuration list for PBXNativeTarget "LyricFinder" */;
+			buildPhases = (
+				332A6FCE1AD9616900668000 /* Sources */,
+				332A6FCF1AD9616900668000 /* Frameworks */,
+				332A6FD01AD9616900668000 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyricFinder;
+			productName = LyricFinder;
+			productReference = 332A6FD21AD9616900668000 /* LyricFinder */;
+			productType = "com.apple.product-type.tool";
+		};
+		33476BFA1A98C4C400F201AC /* RestaurantFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33476BFF1A98C4C500F201AC /* Build configuration list for PBXNativeTarget "RestaurantFinder" */;
+			buildPhases = (
+				33476BF71A98C4C400F201AC /* Sources */,
+				33476BF81A98C4C400F201AC /* Frameworks */,
+				33476BF91A98C4C400F201AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestaurantFinder;
+			productName = RestaurantFinder;
+			productReference = 33476BFB1A98C4C400F201AC /* RestaurantFinder */;
+			productType = "com.apple.product-type.tool";
+		};
+		3377A8EE1A6E52D100C7C44E /* MusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3377A8F51A6E52D100C7C44E /* Build configuration list for PBXNativeTarget "MusicPlayer" */;
+			buildPhases = (
+				3377A8EB1A6E52D100C7C44E /* Sources */,
+				3377A8EC1A6E52D100C7C44E /* Frameworks */,
+				3377A8ED1A6E52D100C7C44E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3392C6E11A777F770009B003 /* PBXTargetDependency */,
+			);
+			name = MusicPlayer;
+			productName = MusicPlayer;
+			productReference = 3377A8EF1A6E52D100C7C44E /* MusicPlayer */;
+			productType = "com.apple.product-type.tool";
+		};
+		33D0E3211949DAE100B71462 /* GCExtend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D0E3261949DAE100B71462 /* Build configuration list for PBXNativeTarget "GCExtend" */;
+			buildPhases = (
+				33D0E31E1949DAE100B71462 /* Sources */,
+				33D0E31F1949DAE100B71462 /* Frameworks */,
+				33D0E3201949DAE100B71462 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCExtend;
+			productName = GCExtend;
+			productReference = 33D0E3221949DAE100B71462 /* libGCExtend.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D0E31A1949DAE100B71462 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MP;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Wai Man Chan";
+				TargetAttributes = {
+					332A6FD11AD9616900668000 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					33476BFA1A98C4C400F201AC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3377A8EE1A6E52D100C7C44E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 33D0E31D1949DAE100B71462 /* Build configuration list for PBXProject "GCExtend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 33D0E3191949DAE100B71462;
+			productRefGroup = 33D0E3231949DAE100B71462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D0E3211949DAE100B71462 /* GCExtend */,
+				3377A8EE1A6E52D100C7C44E /* MusicPlayer */,
+				33476BFA1A98C4C400F201AC /* RestaurantFinder */,
+				332A6FD11AD9616900668000 /* LyricFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		332A6FCE1AD9616900668000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332A6FD51AD9616900668000 /* main.m in Sources */,
+				33244B9C1ADF668600EDE43A /* LyricFinder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33476BF71A98C4C400F201AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33476C041A98C54A00F201AC /* RFRestaurantFinderExtension.m in Sources */,
+				33476BFE1A98C4C500F201AC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3377A8EB1A6E52D100C7C44E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3377A8F21A6E52D100C7C44E /* main.m in Sources */,
+				3392C6D61A776D880009B003 /* MPMusicPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D0E31E1949DAE100B71462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33EB129C1A8A52B2007AF03F /* GCETime.m in Sources */,
+				3392C7571A778FF60009B003 /* GCEObjectRequest.m in Sources */,
+				3392C7581A778FF60009B003 /* GCEObject.m in Sources */,
+				3392C7591A778FF60009B003 /* GCELocation.m in Sources */,
+				3392C75A1A778FF60009B003 /* GCEPerson.m in Sources */,
+				33D0E32C1949DB4C00B71462 /* GCEExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3392C6E11A777F770009B003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D0E3211949DAE100B71462 /* GCExtend */;
+			targetProxy = 3392C6E01A777F770009B003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		332A6FD61AD9616900668000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		332A6FD71AD9616900668000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33476C001A98C4C500F201AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33476C011A98C4C500F201AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3377A8F31A6E52D100C7C44E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Gigantic-dcmmhqxbwmlitffeatzwjxxnmnta/Build/Products/Debug",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3377A8F41A6E52D100C7C44E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Gigantic-dcmmhqxbwmlitffeatzwjxxnmnta/Build/Products/Debug",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33D0E3241949DAE100B71462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/Users/waimanchan/Documents/Gigantic/VoiceUI/**";
+			};
+			name = Debug;
+		};
+		33D0E3251949DAE100B71462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/Users/waimanchan/Documents/Gigantic/VoiceUI/**";
+			};
+			name = Release;
+		};
+		33D0E3271949DAE100B71462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33D0E3281949DAE100B71462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332A6FD81AD9616900668000 /* Build configuration list for PBXNativeTarget "LyricFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332A6FD61AD9616900668000 /* Debug */,
+				332A6FD71AD9616900668000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33476BFF1A98C4C500F201AC /* Build configuration list for PBXNativeTarget "RestaurantFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33476C001A98C4C500F201AC /* Debug */,
+				33476C011A98C4C500F201AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3377A8F51A6E52D100C7C44E /* Build configuration list for PBXNativeTarget "MusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3377A8F31A6E52D100C7C44E /* Debug */,
+				3377A8F41A6E52D100C7C44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D0E31D1949DAE100B71462 /* Build configuration list for PBXProject "GCExtend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D0E3241949DAE100B71462 /* Debug */,
+				33D0E3251949DAE100B71462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D0E3261949DAE100B71462 /* Build configuration list for PBXNativeTarget "GCExtend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D0E3271949DAE100B71462 /* Debug */,
+				33D0E3281949DAE100B71462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33D0E31A1949DAE100B71462 /* Project object */;
+}

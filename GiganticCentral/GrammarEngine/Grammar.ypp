@@ -1,0 +1,284 @@
+%{
+    #import "Grammar.h"
+    #import <sstream>
+    #import <stdio.h>
+    #import <iostream>
+    using namespace std;
+    
+    #define YYERROR_VERBOSE 0
+    #define YYDEBUG 0
+    
+    int yyerror(void *scanner, const char *s) {
+        invaildBuffer();
+        pushResult();
+        cout << s << endl;
+        cout << endl;
+        return 1;
+    }
+    
+    extern int yylex (YYSTYPE * yylval_param ,void *yyscanner);
+    extern int yydebug;
+%}
+
+%pure_parser
+%lex-param {void * scanner}
+%parse-param {void * scanner}
+%token VERB NOUN ADJ ADV DO BE PREPO _and _or OWNER PRONOUN DIGIT EXCLAMATION FAIL objPREPO
+%token WHAT WHERE WHO WHEN HOW WHICH IF
+
+%%
+
+input: line {
+    if ($1) {
+        message *m = (message *)$1;
+        printMessageStructure(m);
+        delete $1;
+        pushResult();
+        YYACCEPT;
+    } else {
+        printf("Got a empty line");
+    }
+}
+
+line : COMMAND '\n' { $$ = $1; }
+| EX '\n' { $$ = $1; }
+| STMT '\n' { $$ = $1; }
+| QUESTION '\n' { $$ = $1; }
+| '\n' { $$ = NULL; }
+
+COMMAND: _COMMAND { $$ = $1; } | COMMAND modifier {
+    switch ($2->phaseType()) {
+        case phaseType_modifier_action: {
+            phase *verb = $1->subPhases[0];
+            verb->modifier.push_back($2);
+        }
+        break;
+        case phaseType_modifier_objectRelation: {
+            phase *noun = $1->subPhases[1];
+            phase *modifier = $2;
+            phase *newNoun = wordCombination(modifier->subPhases[1], noun, phaseType_noun, true, true);
+            newNoun->_compoundType = wordsCompoundType_child;
+            $1->subPhases[1] = newNoun;
+        }
+        break;
+    }
+    $$ = $1;
+}
+
+_COMMAND : subCOMMAND { $$ = $1; } | CONDITION subCOMMAND {
+    //When ....., .......
+    $$ = $2;
+} | subCOMMAND CONDITION {
+    //....... when ......
+    $$ = $1;
+}
+
+STMT: _STMT { $$ = $1; } | STMT modifier {
+    switch ($2->phaseType()) {
+        case phaseType_modifier_action: {
+            phase *verb = $1->subPhases[1];
+            verb->modifier.push_back($2);
+        }
+        break;
+        case phaseType_modifier_objectRelation: {
+            phase *noun = $1->subPhases[2];
+            phase *modifier = $2;
+            phase *newNoun = wordCombination(modifier->subPhases[1], noun, phaseType_noun, true, true);
+            newNoun->_compoundType = wordsCompoundType_child;
+            $1->subPhases[2] = newNoun;
+        }
+        break;
+    }
+    $$ = $1;
+}
+
+_STMT: OBJECT ACTION OBJECT {
+    $$ = new message(messagePurpose_statement, 3, $1, $2, $3);
+} | OBJECT BE DESCRIBE {
+    $$ = new message(messagePurpose_statement, 3, $1, $2, $3);
+}
+
+subCOMMAND: ACTION OBJECT {
+    $$ = new message(messagePurpose_command, 2, $1, $2);
+}
+
+EX: EXCLAMATION {
+    $$ = new message(messagePurpose_exclamation, 1, $1);
+}
+
+CONDITION : _CONDITION {
+    ((message *)$1)->setMessagePurpose(messagePurpose_condition);
+    printMessageStructure((message *)$1);
+    $$ = $1;
+}
+
+_CONDITION : WHEN STMT {
+    //When ........
+    $$ = $2;
+} | IF STMT {
+    //If ........
+    $$ = $2;
+}
+
+//of car/for friends/at noon/by him
+modifier : PREPO OBJECT {
+    phaseType type = phaseType_modifier;
+    if (!strcmp($1->wordContent().c_str(), "for")) {
+        type = phaseType_modifier_action;
+    } else if (!strcmp($1->wordContent().c_str(), "of")) {
+        type = phaseType_modifier_objectRelation;
+    }
+    $$ = new phase(-1, type, 2, $1, $2);
+}
+
+QUESTION: QT BE OBJECT {
+    $$ = new message(messagePurpose_question, 3, $1, $2, $3);
+} | QT DO OBJECT ACTION {
+    delete $2;
+    $$ = new message(messagePurpose_question, 3, $1, $4, $3);
+    
+} | DO OBJECT ACTION QT ACTION OBJECT {
+    //Do you know ....... =>
+    char returnPattern[] = "Return Pattern: %s";
+    output(returnPattern);
+    delete $1;  delete $2;  delete $3;
+    $$ = new phase(-1, phaseType_none, 3, $4, $5, $6);
+} | BOOL_QUESTION { $$=$1; }
+
+//First element: Question word
+BOOL_QUESTION: DO OBJECT ACTION {
+    //Example: do I drive
+    phase *_questionWord = new word(-1, phaseType_questionWord, "");
+    $$ = new message(messagePurpose_question, 3, _questionWord, $3, $2);
+} | BE OBJECT DESCRIBE {
+    //Example: am I dying
+    phase *_questionWord = new word(-1, phaseType_questionWord, "");
+    $$ = new message(messagePurpose_question, 3, _questionWord, $3, $2);
+} | BE OBJECT OBJECT {
+    //Example: am I a human
+    phase *_questionWord = new word(-1, phaseType_questionWord, "");
+    $$ = new message(messagePurpose_question, 3, _questionWord, $3, $2);
+}
+
+QT: QW
+  | WHAT OBJECT {
+    word *qw = dynamic_cast<word *>($1);
+    $$ = new phase(-1, phaseType_questionWord, 2, $1, $2);
+#if DEBUG
+    phase *temp = $$;
+#endif
+}| HOW DESCRIBE {
+    //Sample: How old/How fast
+    word *qw = dynamic_cast<word *>($1);
+    $$ = new phase(-1, phaseType_questionWord, 2, $1, $2);
+    #if DEBUG
+    phase *temp = $$;
+    #endif
+}
+
+//No idea what's this
+// | QW PRONOUN {
+    //Which one?
+   // word *qw = dynamic_cast<word *>($1);
+    //if (qw != nullptr && qw->wordContent() == "which") {
+      //  $$ = new phase(-1, phaseType_questionWord, 2, $1, $2);
+    //} else return 1;
+    //#if DEBUG
+    //phase *temp = $$;
+    //#endif
+//}
+
+QW: WHAT {
+    $$ = new word(-1, phaseType_questionWord, "what");
+}| WHERE {
+    $$ = new word(-1, phaseType_questionWord, "where");
+}| WHO {
+    $$ = new word(-1, phaseType_questionWord, "who");
+}| WHEN {
+    $$ = new word(-1, phaseType_questionWord, "when");
+}| HOW {
+    $$ = new word(-1, phaseType_questionWord, "how");
+}| WHICH {
+    $$ = new word(-1, phaseType_questionWord, "which");
+}
+
+/*
+ * he/she/her/him/...
+ */
+OBJECT: PRONOUN | STH | //OWNER {
+    //auto a = $1;
+    //if (a->wordContent() == "her") {
+    //    delete a;
+    //    $$ = new word(-1, phaseType_pronoun, "she");
+    //} else {
+    //    YYERROR;
+    //}
+//}
+
+STH: _OBJECT | STH objPREPO _OBJECT {
+    void *a = $1;
+    void *b = $2;
+    void *c = $3;
+    $$ = new phase(-1, phaseType_modifier_objectRelation, 2, $3, $1);
+    $$->_compoundType = wordsCompoundType_child;
+}
+
+/*
+ * Wrap the object with the describtion
+ */
+
+/*_OBJECT*/_SUBOBJECT: NOUNS/*_SUBOBJECT*/ | DESCRIBE NOUNS {
+    auto a = $1;
+    auto b = $2;
+    $$ = wordCombination($1, $2, phaseType_noun, true, true);
+    $$->_compoundType = wordsCompoundType_descibe;
+}
+
+/*
+ * Wrap the object with sub-noun, pronoun, and noun->noun
+ */
+
+/*_SUBOBJECT*/_OBJECT: _SUBOBJECT | OWNER _OBJECT {
+    //His shirt
+    $$ = wordCombination($1, $2, phaseType_noun, true, true);
+    $$->_compoundType = wordsCompoundType_owner;
+} | _OBJECT _SUBOBJECT {
+    //Taylor swift('s) newest album
+    $$ = wordCombination($1, $2, phaseType_noun, true, true);
+    $$->_compoundType = wordsCompoundType_child;
+}
+
+/*
+ * Noun: Single object set that point to a set of objects
+ * e.g. "car dashboard", "skin color"
+ */
+
+NOUNS: NOUN | //|NOUNS NOUN {
+    //$$ = wordCombination($1, $2, phaseType_noun, true, false);
+    //$$->_compoundType = wordsCompoundType_logic;
+NOUNS _and NOUN {
+    $$ = wordCombination($1, $3, phaseType_noun, true, false);
+    $$->_compoundType = wordsCompoundType_logic;
+} | NOUNS _or NOUN {
+    $$ = wordCombination($1, $3, phaseType_noun, false, false);
+    $$->_compoundType = wordsCompoundType_logic;
+}
+
+/*
+ * DESCRIBE: The phase that descibe/patch the noun
+ * e.g. "old", "old, useless and stupid"
+ */
+DESCRIBE: ADJ | DESCRIBE ADJ {
+    $$ = wordCombination($1, $2, phaseType_adjective, true, false);
+    $$->_compoundType = wordsCompoundType_logic;
+} | DESCRIBE _and ADJ {
+    $$ = wordCombination($1, $3, phaseType_adjective, true, false);
+    $$->_compoundType = wordsCompoundType_logic;
+} | DESCRIBE _or ADJ {
+    $$ = wordCombination($1, $3, phaseType_adjective, false, false);
+    $$->_compoundType = wordsCompoundType_logic;
+}
+
+ACTION: DO{$$=$1;}|VERB{$$=$1;}|BE{$$=$1;}
+
+%%
