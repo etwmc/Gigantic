@@ -1,0 +1,321 @@
+Terminals which are not used
+
+   Relation
+
+
+State 3 conflicts: 1 shift/reduce
+
+
+Grammar
+
+    0 $accept: input $end
+
+    1 input: /* empty */
+    2      | input line
+    3      | error line
+
+    4 line: '\n'
+    5     | QUESTION '\n'
+    6     | IndirectQuestion '\n'
+
+    7 IndirectQuestion: DO NounPhase VERB QT NounPhase VERB
+
+    8 QUESTION: QT VERB NounPhase
+
+    9 QT: QW NOUN
+   10   | QW
+
+   11 NounPhase: OWNERSHIP LinkedObj
+   12          | PRONOUN
+   13          | LinkedObj
+
+   14 LinkedObj: ADJECTIVE NOUN
+   15          | NOUN
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'\n' (10) 4 5 6
+error (256) 3
+QW (258) 9 10
+VERB (259) 7 8
+NOUN (260) 9 14 15
+Relation (261)
+ADJECTIVE (262) 14
+OWNERSHIP (263) 11
+PRONOUN (264) 12
+DO (265) 7
+
+
+Nonterminals, with rules where they appear
+
+$accept (12)
+    on left: 0
+input (13)
+    on left: 1 2 3, on right: 0 2
+line (14)
+    on left: 4 5 6, on right: 2 3
+IndirectQuestion (15)
+    on left: 7, on right: 6
+QUESTION (16)
+    on left: 8, on right: 5
+QT (17)
+    on left: 9 10, on right: 7 8
+NounPhase (18)
+    on left: 11 12 13, on right: 7 8
+LinkedObj (19)
+    on left: 14 15, on right: 11 13
+
+
+state 0
+
+    0 $accept: . input $end
+
+    error  shift, and go to state 1
+
+    $end  reduce using rule 1 (input)
+    QW    reduce using rule 1 (input)
+    DO    reduce using rule 1 (input)
+    '\n'  reduce using rule 1 (input)
+
+    input  go to state 2
+
+
+state 1
+
+    3 input: error . line
+
+    QW    shift, and go to state 3
+    DO    shift, and go to state 4
+    '\n'  shift, and go to state 5
+
+    line              go to state 6
+    IndirectQuestion  go to state 7
+    QUESTION          go to state 8
+    QT                go to state 9
+
+
+state 2
+
+    0 $accept: input . $end
+    2 input: input . line
+
+    $end  shift, and go to state 10
+    QW    shift, and go to state 3
+    DO    shift, and go to state 4
+    '\n'  shift, and go to state 5
+
+    line              go to state 11
+    IndirectQuestion  go to state 7
+    QUESTION          go to state 8
+    QT                go to state 9
+
+
+state 3
+
+    9 QT: QW . NOUN
+   10   | QW .
+
+    NOUN  shift, and go to state 12
+
+    NOUN      [reduce using rule 10 (QT)]
+    $default  reduce using rule 10 (QT)
+
+
+state 4
+
+    7 IndirectQuestion: DO . NounPhase VERB QT NounPhase VERB
+
+    NOUN       shift, and go to state 13
+    ADJECTIVE  shift, and go to state 14
+    OWNERSHIP  shift, and go to state 15
+    PRONOUN    shift, and go to state 16
+
+    NounPhase  go to state 17
+    LinkedObj  go to state 18
+
+
+state 5
+
+    4 line: '\n' .
+
+    $default  reduce using rule 4 (line)
+
+
+state 6
+
+    3 input: error line .
+
+    $default  reduce using rule 3 (input)
+
+
+state 7
+
+    6 line: IndirectQuestion . '\n'
+
+    '\n'  shift, and go to state 19
+
+
+state 8
+
+    5 line: QUESTION . '\n'
+
+    '\n'  shift, and go to state 20
+
+
+state 9
+
+    8 QUESTION: QT . VERB NounPhase
+
+    VERB  shift, and go to state 21
+
+
+state 10
+
+    0 $accept: input $end .
+
+    $default  accept
+
+
+state 11
+
+    2 input: input line .
+
+    $default  reduce using rule 2 (input)
+
+
+state 12
+
+    9 QT: QW NOUN .
+
+    $default  reduce using rule 9 (QT)
+
+
+state 13
+
+   15 LinkedObj: NOUN .
+
+    $default  reduce using rule 15 (LinkedObj)
+
+
+state 14
+
+   14 LinkedObj: ADJECTIVE . NOUN
+
+    NOUN  shift, and go to state 22
+
+
+state 15
+
+   11 NounPhase: OWNERSHIP . LinkedObj
+
+    NOUN       shift, and go to state 13
+    ADJECTIVE  shift, and go to state 14
+
+    LinkedObj  go to state 23
+
+
+state 16
+
+   12 NounPhase: PRONOUN .
+
+    $default  reduce using rule 12 (NounPhase)
+
+
+state 17
+
+    7 IndirectQuestion: DO NounPhase . VERB QT NounPhase VERB
+
+    VERB  shift, and go to state 24
+
+
+state 18
+
+   13 NounPhase: LinkedObj .
+
+    $default  reduce using rule 13 (NounPhase)
+
+
+state 19
+
+    6 line: IndirectQuestion '\n' .
+
+    $default  reduce using rule 6 (line)
+
+
+state 20
+
+    5 line: QUESTION '\n' .
+
+    $default  reduce using rule 5 (line)
+
+
+state 21
+
+    8 QUESTION: QT VERB . NounPhase
+
+    NOUN       shift, and go to state 13
+    ADJECTIVE  shift, and go to state 14
+    OWNERSHIP  shift, and go to state 15
+    PRONOUN    shift, and go to state 16
+
+    NounPhase  go to state 25
+    LinkedObj  go to state 18
+
+
+state 22
+
+   14 LinkedObj: ADJECTIVE NOUN .
+
+    $default  reduce using rule 14 (LinkedObj)
+
+
+state 23
+
+   11 NounPhase: OWNERSHIP LinkedObj .
+
+    $default  reduce using rule 11 (NounPhase)
+
+
+state 24
+
+    7 IndirectQuestion: DO NounPhase VERB . QT NounPhase VERB
+
+    QW  shift, and go to state 3
+
+    QT  go to state 26
+
+
+state 25
+
+    8 QUESTION: QT VERB NounPhase .
+
+    $default  reduce using rule 8 (QUESTION)
+
+
+state 26
+
+    7 IndirectQuestion: DO NounPhase VERB QT . NounPhase VERB
+
+    NOUN       shift, and go to state 13
+    ADJECTIVE  shift, and go to state 14
+    OWNERSHIP  shift, and go to state 15
+    PRONOUN    shift, and go to state 16
+
+    NounPhase  go to state 27
+    LinkedObj  go to state 18
+
+
+state 27
+
+    7 IndirectQuestion: DO NounPhase VERB QT NounPhase . VERB
+
+    VERB  shift, and go to state 28
+
+
+state 28
+
+    7 IndirectQuestion: DO NounPhase VERB QT NounPhase VERB .
+
+    $default  reduce using rule 7 (IndirectQuestion)

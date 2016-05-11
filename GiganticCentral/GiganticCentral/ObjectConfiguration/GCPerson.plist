@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Verb</key>
+	<array>
+		<dict>
+			<key>Command</key>
+			<string>phone</string>
+			<key>Return Value</key>
+			<false/>
+			<key>Accept Modifier</key>
+			<false/>
+		</dict>
+	</array>
+	<key>classID</key>
+	<integer>125</integer>
+	<key>routingReference_verb</key>
+	<array>
+		<string>call</string>
+	</array>
+	<key>routingReference_adjective</key>
+	<array>
+		<string>married</string>
+		<string></string>
+		<string></string>
+		<string>chinese</string>
+		<string></string>
+		<string></string>
+		<string>japanese</string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>routingReference_instance</key>
+	<array>
+		<string>jonny</string>
+		<string>sanki</string>
+	</array>
+	<key>routingReference_noun</key>
+	<array>
+		<string>friend</string>
+		<string>name</string>
+	</array>
+	<key>Noun</key>
+	<array>
+		<dict>
+			<key>Expression</key>
+			<string>ANY relation.toPerson</string>
+		</dict>
+		<dict>
+			<key>Expression</key>
+			<string>FUNCTION(self.firstName, &apos;stringByWhiteSpaceJoint:&apos;, self.lastName)</string>
+		</dict>
+	</array>
+	<key>Adjective</key>
+	<array>
+		<dict>
+			<key>judgement</key>
+			<string>ANY self.relation.relation.isCouple == true</string>
+		</dict>
+		<dict>
+			<key>judgement</key>
+			<string>nationality == 0</string>
+		</dict>
+		<dict>
+			<key>judgement</key>
+			<string>nationality == 1</string>
+		</dict>
+	</array>
+	<key>Instance</key>
+	<array>
+		<string>~/jonny.plist</string>
+		<string>~/sanki.plist</string>
+	</array>
+</dict>
+</plist>

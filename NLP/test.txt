@@ -1,0 +1,16 @@
+What time is it? 
+This is 13:39.73
+What date is it? 
+This is Wed Apr 30 2014.
+Who am I? 
+Your name is ET
+What is my name? 
+Your name is ET
+What is my full name? 
+Your full name is Wai Man Chan
+What is my first name? 
+Your first name is Wai Man
+What is my last name? 
+Your last name is Chan
+Watt is my name? 
+Error: syntax error

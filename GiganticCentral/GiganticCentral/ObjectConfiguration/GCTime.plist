@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>routingReference_adjective</key>
+	<array>
+		<string>morning</string>
+		<string>afternoon</string>
+		<string>evening</string>
+	</array>
+	<key>classID</key>
+	<integer>124</integer>
+	<key>Adjective</key>
+	<array>
+		<dict>
+			<key>judgement</key>
+			<string>(self.hour &gt;= 5) AND (self.hour &lt; 12)</string>
+		</dict>
+		<dict>
+			<key>judgement</key>
+			<string>(self.hour &gt;= 12) AND (self.hour &lt; 18)</string>
+		</dict>
+		<dict>
+			<key>judgement</key>
+			<string>(self.hour &gt;= 18) OR (self.hour &lt; 5)</string>
+		</dict>
+	</array>
+</dict>
+</plist>

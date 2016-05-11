@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>classID</key>
+	<integer>0</integer>
+	<key>routingReference_noun</key>
+	<array>
+		<string>time</string>
+		<string>date</string>
+	</array>
+	<key>Noun</key>
+	<array>
+		<dict>
+			<key>Expression</key>
+			<string>FUNCTION(self, &apos;currentTimeWithMask:&apos;, 4)</string>
+			<key>ResponseFormat</key>
+			<string>The time is %@</string>
+		</dict>
+		<dict>
+			<key>Expression</key>
+			<string>FUNCTION(self, &apos;currentTimeWithMask:&apos;, 2)</string>
+			<key>ResponseFormat</key>
+			<string>The date is %@</string>
+		</dict>
+	</array>
+</dict>
+</plist>
