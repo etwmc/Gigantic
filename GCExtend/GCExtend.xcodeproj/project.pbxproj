@@ -532,7 +532,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "/Users/waimanchan/Documents/Gigantic/VoiceUI/**";
+				USER_HEADER_SEARCH_PATHS = "../VoiceUI/**";
 			};
 			name = Debug;
 		};
@@ -565,7 +565,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "/Users/waimanchan/Documents/Gigantic/VoiceUI/**";
+				USER_HEADER_SEARCH_PATHS = "../VoiceUI/**";
 			};
 			name = Release;
 		};

@@ -11,7 +11,7 @@ import WebKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
     
     @IBOutlet weak var webView: WebView!
@@ -19,16 +19,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         NSAppleEventManager.sharedAppleEventManager().setEventHandler(self, andSelector: "handleAppleEvent:withReplyEvent:", forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
-
+        
     }
-
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
     func handleAppleEvent(event: NSAppleEventDescriptor, withReplyEvent replyEvent: NSAppleEventDescriptor) {
         if let urlString = event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))?.stringValue {
-            if let url = NSURL(string: urlString), let scheme = url.scheme {
+            if let url = NSURL(string: urlString) {
+                let scheme = url.scheme
                 switch scheme {
                 case "lyric":
                     if let singerName = url.host, let songTitle = url.lastPathComponent {
@@ -39,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     break
                     
                 default:
-                break
+                    break
                 }
                 
             }
